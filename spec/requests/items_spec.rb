@@ -109,8 +109,7 @@ RSpec.describe 'Items API' do
         context 'when item does not exst' do
             let(:id) { 0 }
 
-            it 'returns status code 404'
-             do
+            it 'returns status code 404' do
                 expect(response).to have_http_status(404)
             end
 
